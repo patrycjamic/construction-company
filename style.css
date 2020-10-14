@@ -4,28 +4,27 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
-  color: #262626;
 }
 
 .wrapper {
-  border: 1px solid red;
+  overflow-x: hidden;
 }
 
 .wrapper .top-nav {
-  border: 1px solid green;
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #0B3142;
 }
 
 .wrapper .top-nav p {
-  padding: 2% 0 2% 5%;
   color: #E2E8CE;
-  margin: 0;
+  padding: 2% 0 2% 5%;
   font-size: .9rem;
 }
 
 .wrapper header {
-  height: 10vh;
-  border: 1px solid pink;
+  margin-top: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +43,7 @@
 }
 
 .wrapper header i {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .wrapper header .menu {
@@ -59,10 +58,61 @@
   background-position: center left;
 }
 
+.wrapper main .introduction {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper main .introduction h2 {
+  font-size: 1.6rem;
+}
+
+.wrapper main .introduction p {
+  font-size: 1.2rem;
+}
+
+.wrapper footer .location {
+  background-color: #0B3142;
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+}
+
+.wrapper footer .location iframe {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper footer .copy {
+  text-align: center;
+  padding: 5px;
+  background-color: #3d7781;
+}
+
+.wrapper footer .copy .author {
+  color: white;
+}
+
 @media only screen and (min-width: 1200px) {
   .wrapper .top-nav p {
     padding: 10px 0 10px 30px;
     font-size: 1rem;
+  }
+  .wrapper footer .location iframe {
+    height: 50vh;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,31 +1,26 @@
 $base-color: #0B3142;
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    color: #262626;
 }
-
-// font-family: 'Nunito', sans-serif;
-// font-family: 'Roboto', sans-serif;
-
 .wrapper{
-    border: 1px solid red;
+    overflow-x: hidden;
     .top-nav{
-        border: 1px solid green;
+        position: fixed;
+        top: 0;
+        width: 100%;
         background-color: $base-color;
         p{
-            padding: 2% 0 2% 5%;
             color: #E2E8CE;
-            margin: 0;
+            padding: 2% 0 2% 5%;
             font-size: .9rem;
         }
     }
     header{
-        height: 10vh;
-        border: 1px solid pink;
+        margin-top: 5vh;
+        // height: 15vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -35,7 +30,7 @@ $base-color: #0B3142;
             text-align: center;
             font-weight: 400;
         }
-        i{font-size: 1.2rem;}
+        i{font-size: 1rem;}
         .menu{display: none;}
     }
     main{
@@ -46,7 +41,37 @@ $base-color: #0B3142;
             background-size: cover;
             background-position: center left;
         }
+        .introduction{
+            min-height: 20vh;
+            display: flex;
+            align-items:center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            h2{font-size: 1.6rem;}
+            p{font-size: 1.2rem;}
+        }
     }
+
+    footer{
+        .location{
+            background-color: $base-color;
+            width: 100%;
+            padding: 2%;
+            text-align: center;
+            iframe{
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    
+        .copy{
+            text-align: center;
+            padding: 5px;
+            background-color: #3d7781;
+            .author{color: white;}
+        }
+    }
+
 }
 @media screen and(min-width: 1023px){
     //iPad Pro
@@ -65,5 +90,15 @@ $base-color: #0B3142;
                 font-size: 1rem;
             }
         }
+        footer{
+            .location{
+                iframe{
+                    height: 50vh;
+                    width: 100%;
+                }
+            }
+
+        }
+
     }
 }
