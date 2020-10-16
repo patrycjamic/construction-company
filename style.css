@@ -6,19 +6,18 @@
   font-family: 'Nunito', sans-serif;
 }
 
-.wrapper {
-  overflow-x: hidden;
-}
-
 .wrapper .top-nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #0B3142;
+  background-color: #c0dfdb;
+}
+
+.wrapper .top-nav .bold-text {
+  font-weight: bold;
 }
 
 .wrapper .top-nav p {
-  color: #E2E8CE;
   padding: 2% 0 2% 5%;
   font-size: .9rem;
 }
@@ -35,11 +34,22 @@
           align-items: center;
 }
 
-.wrapper header h1 {
-  padding: 3%;
+.wrapper header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Roboto', sans-serif;
-  text-align: center;
-  font-weight: 400;
+  width: 25%;
+  padding: 20px;
+  height: 100%;
+  text-decoration: none;
+  color: black;
 }
 
 .wrapper header i {
@@ -48,6 +58,48 @@
 
 .wrapper header .menu {
   display: none;
+}
+
+.wrapper header .overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.wrapper header .overlay .fa-times {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.8rem;
+  color: white;
+}
+
+.wrapper header .overlay ul {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  border: 1px solid blue;
+}
+
+.wrapper header .overlay ul li {
+  padding: 5%;
+  border: 1px solid red;
+}
+
+.wrapper header .overlay ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .wrapper main .img-container {
@@ -84,7 +136,7 @@
 }
 
 .wrapper footer .location {
-  background-color: #0B3142;
+  background-color: #c0dfdb;
   width: 100%;
   padding: 2%;
   text-align: center;
@@ -105,10 +157,62 @@
   color: white;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
   .wrapper .top-nav p {
     padding: 10px 0 10px 30px;
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+  .wrapper header {
+    height: 12vh;
+  }
+  .wrapper header .burger-menu {
+    display: none;
+  }
+  .wrapper header .menu {
+    display: block;
+    height: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .wrapper header .menu .fa-times {
+    display: none;
+  }
+  .wrapper header .menu ul {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .wrapper header .menu ul li {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper header .menu ul li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .wrapper header .menu ul li a:hover {
+    background-color: #c0dfdb;
   }
   .wrapper footer .location iframe {
     height: 50vh;
