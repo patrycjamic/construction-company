@@ -3,7 +3,6 @@ const casualMenu = document.querySelector('.menu');
 const times = document.querySelector('.fa-times');
 
 window.onresize = function(){ location.reload(); }
-
 burgerMenu.addEventListener('click', ()=>{
     casualMenu.style.display = "block";
     casualMenu.classList.add('overlay');

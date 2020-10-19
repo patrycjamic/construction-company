@@ -68,8 +68,9 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  overflow: auto;
+  -webkit-transition: height 2s;
+  transition: height 2s;
 }
 
 .wrapper header .overlay .fa-times {
@@ -88,18 +89,17 @@
   width: 100%;
   text-align: center;
   margin-top: 30px;
-  border: 1px solid blue;
 }
 
 .wrapper header .overlay ul li {
   padding: 5%;
-  border: 1px solid red;
 }
 
 .wrapper header .overlay ul li a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  border-bottom: 2px solid #c0dfdb;
 }
 
 .wrapper main .img-container {
