@@ -10,6 +10,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
   background-color: #c0dfdb;
 }
 
@@ -38,12 +39,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: 'Roboto', sans-serif;
   width: 25%;
   padding: 20px;
@@ -110,29 +111,54 @@
   background-position: center left;
 }
 
-.wrapper main .introduction {
-  min-height: 20vh;
+.wrapper main .chapter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 5%;
 }
 
-.wrapper main .introduction h2 {
+.wrapper main .chapter p {
+  font-size: 1.2rem;
+}
+
+.wrapper main .chapter h2 {
   font-size: 1.6rem;
 }
 
-.wrapper main .introduction p {
-  font-size: 1.2rem;
+.wrapper main .chapter h2 {
+  padding: 2%;
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper main .introduction {
+  min-height: 23vh;
+  padding: 0;
+}
+
+.wrapper main .ofirmie, .wrapper main .uslugi, .wrapper main .kontakt {
+  text-align: justify;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.wrapper main .ofirmie img, .wrapper main .uslugi img, .wrapper main .kontakt img {
+  position: absolute;
+  top: 3%;
+  left: 15%;
+  width: 12%;
+  opacity: .2;
 }
 
 .wrapper footer .location {
@@ -158,6 +184,9 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .wrapper {
+    overflow: hidden;
+  }
   .wrapper .top-nav p {
     padding: 10px 0 10px 30px;
     font-size: 0.8rem;
@@ -213,6 +242,35 @@
   }
   .wrapper header .menu ul li a:hover {
     background-color: #c0dfdb;
+  }
+  .wrapper main .chapter:nth-child(n+3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid red;
+    min-height: 50vh;
+    padding-top: 5vh;
+    width: 85vw;
+    margin: 0 auto;
+  }
+  .wrapper main .chapter:nth-child(n+3) h2 {
+    border: 1px solid green;
+    padding: 0;
+    margin: 0;
+  }
+  .wrapper main .chapter:nth-child(n+3) img {
+    display: none;
+  }
+  .wrapper main .chapter:nth-child(n+3) p {
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
   }
   .wrapper footer .location iframe {
     height: 50vh;
