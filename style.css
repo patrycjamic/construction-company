@@ -313,8 +313,7 @@
         -ms-flex-align: center;
             align-items: center;
     border: 1px solid red;
-    height: 50vh;
-    padding-top: 5vh;
+    padding: 10vh 5vh;
     width: 85vw;
     margin: 0 auto;
   }
@@ -331,8 +330,11 @@
     padding: 0;
     margin: 0;
   }
+  .wrapper main .chapter h2 {
+    font-size: 2vw;
+  }
   .wrapper main .chapter p {
-    font-size: 1.5vw;
+    font-size: 1.4vw;
   }
   .wrapper footer .location iframe {
     height: 50vh;
