@@ -5,11 +5,28 @@ const childs = document.querySelector('.menu ul').children;
 const showBtn = document.querySelector('.showBtn');
 const toTop = document.querySelector('.toupBtn');
 
+const parentOfMenu = document.createElement('div');
+const header = document.querySelector('header');
+
+
 window.onresize = function(){ location.reload(); }
+
+header.append(parentOfMenu);
+parentOfMenu.appendChild(casualMenu);
+parentOfMenu.style.position = "absolute";
+
+
 burgerMenu.addEventListener('click', ()=>{
     casualMenu.style.display = "block";
     casualMenu.classList.add('overlay');
     document.querySelector('.overlay').style.height = "100%";//missing animation
+
+    parentOfMenu.animate([
+      {opacity: '0'},
+      {opacity: '1'}
+    ], {
+      duration: 1000,
+    })
 
     for(let i = 0; i < childs.length; i++){
         childs[i].addEventListener('click', ()=>{
@@ -18,6 +35,11 @@ burgerMenu.addEventListener('click', ()=>{
         })
     }
 })
+
+if (window.innerWidth > 1000) {
+  parentOfMenu.outerHTML = parentOfMenu.innerHTML;
+}
+
 times.addEventListener('click', ()=>{
     casualMenu.classList.remove('overlay');
     casualMenu.style.display = "none";

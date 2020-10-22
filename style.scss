@@ -10,6 +10,7 @@ $base-color: #c0dfdb;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
+
 .wrapper{
     // overflow-x: hidden;
     .top-nav{
@@ -54,28 +55,24 @@ $base-color: #c0dfdb;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 font-size: 1.8rem;
-                color: white;
+                color: #fff;
             }
             ul{
-                display: flex;
+                @include flexCustomize(center, center);
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 height: 100%;
                 width:100%;
+                // border: 1px solid red;
                 li{
                     width:100%;
                     height: 10%;
+                    border: 1px solid red;
                     a{
-                        color: white;
+                        @include flexCustomize(center, center);
+                        color: #fff;
                         text-decoration: none;
                         text-transform: uppercase;
-                        // border: 1px solid blue;
-                        width: 100%;
                         height: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
                         // transition: all .3s;
                     }
                     &::after{
@@ -143,12 +140,13 @@ $base-color: #c0dfdb;
             text-align: center;
             padding: 5px;
             background-color: #3d7781;
-            .author{color: white;}
+            .author{color: #fff;}
         }
         .showBtn{
             opacity: 0;
             transition: opacity .5s;
             .toupBtn{
+                z-index: 3;
                 position: fixed;
                 bottom: 3vh;
                 right: 2%;
@@ -160,9 +158,7 @@ $base-color: #c0dfdb;
                 background-color: rgb(216, 216, 216);
                 .fa-arrow-up{font-size: 30px; line-height: 60px;}
             }
-
         }
-
     }
 }
 @media screen and(min-width: 1023px){
@@ -210,15 +206,9 @@ $base-color: #c0dfdb;
                     }
                 }
             }
+            
         }
         main{
-            // background-color: $base-color;
-            // .chapter:not(:first-child){
-            //     // background-color: white;
-                // height: 50vh;
-                // width: 85vw;
-                // margin: 0 auto;
-            // }
             .chapter:nth-child(n+3) {
                 @include flexCustomize(center,center );
                 // display: block;
