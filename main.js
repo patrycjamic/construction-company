@@ -9,7 +9,7 @@ const parentOfMenu = document.createElement('div');
 const header = document.querySelector('header');
 
 
-window.onresize = function(){ location.reload(); }
+// window.onresize = function(){ location.reload(); }
 
 header.append(parentOfMenu);
 parentOfMenu.appendChild(casualMenu);
