@@ -7,10 +7,20 @@
 }
 
 .wrapper .top-nav {
+  height: 5vh;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #c0dfdb;
 }
 
@@ -20,10 +30,11 @@
 
 .wrapper .top-nav p {
   padding: 2% 0 2% 5%;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .wrapper header {
+  height: 10vh;
   margin-top: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,16 +73,13 @@
 }
 
 .wrapper header .overlay {
-  height: 0%;
+  height: 100%;
   width: 100%;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 5vh;
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
-  overflow: auto;
-  -webkit-transition: height 2s;
-  transition: height 2s;
 }
 
 .wrapper header .overlay .fa-times {
@@ -171,8 +179,11 @@
 }
 
 .wrapper main .introduction {
-  min-height: 23vh;
-  padding: 0;
+  height: 25vh;
+}
+
+.wrapper main .introduction h2 {
+  padding: 1%;
 }
 
 .wrapper main .ofirmie, .wrapper main .uslugi, .wrapper main .kontakt {
@@ -235,18 +246,14 @@
 }
 
 @media only screen and (min-width: 1000px) {
-  .wrapper {
-    overflow: hidden;
-  }
   .wrapper .top-nav p {
-    padding: 10px 0 10px 30px;
-    font-size: 0.8rem;
-  }
-  .wrapper header {
-    height: 12vh;
+    font-size: 1vw;
   }
   .wrapper header .burger-menu {
     display: none;
+  }
+  .wrapper header .logo {
+    font-size: 1.4vw;
   }
   .wrapper header .menu {
     display: block;
@@ -272,6 +279,7 @@
     list-style: none;
     width: 100%;
     height: 100%;
+    font-size: 1.2vw;
   }
   .wrapper header .menu ul li a {
     display: -webkit-box;
@@ -305,7 +313,7 @@
         -ms-flex-align: center;
             align-items: center;
     border: 1px solid red;
-    min-height: 50vh;
+    height: 50vh;
     padding-top: 5vh;
     width: 85vw;
     margin: 0 auto;
@@ -322,6 +330,9 @@
     border: 1px solid #000;
     padding: 0;
     margin: 0;
+  }
+  .wrapper main .chapter p {
+    font-size: 1.5vw;
   }
   .wrapper footer .location iframe {
     height: 50vh;
