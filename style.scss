@@ -12,7 +12,7 @@ $base-color: #c0dfdb;
 }
 
 .wrapper{
-    // overflow-x: hidden;
+    overflow-x: hidden;
 
     .top-nav{
         height: 5vh;
@@ -214,22 +214,27 @@ $base-color: #c0dfdb;
         main{
             .chapter:nth-child(n+3) {
                 @include flexCustomize(center,center );
-                // display: block;
-                // position: static;
                 border: 1px solid red;
                 // height: 50vh;
-                // padding:;
                 padding: 10vh 5vh;
                 width: 85vw;
                 margin: 0 auto;
-                // padding: 0;
-                h2{border: 1px solid green; padding: 0; margin: 0;}
+                h2{border: 1px solid blue; padding: 0; margin: 0;}
                 img{display: none;}
-                p{border: 1px solid #000; padding:0; margin: 0;}
+                p{border: 1px solid #000; padding:1vw; margin-top: 1vw;}
             }
             .chapter{
                 h2{font-size: 2vw;}
                 p{font-size: 1.4vw;}
+                ul{
+                    li{
+                        font-size: 1.2vw;
+                    }
+                }
+                .contact-box{
+                    margin-top: 1vw;
+                    h3{font-size: 1.2vw;}
+                }
             }
 
         }

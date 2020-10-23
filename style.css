@@ -6,6 +6,10 @@
   font-family: 'Nunito', sans-serif;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
 .wrapper .top-nav {
   height: 5vh;
   position: fixed;
@@ -318,7 +322,7 @@
     margin: 0 auto;
   }
   .wrapper main .chapter:nth-child(n+3) h2 {
-    border: 1px solid green;
+    border: 1px solid blue;
     padding: 0;
     margin: 0;
   }
@@ -327,14 +331,23 @@
   }
   .wrapper main .chapter:nth-child(n+3) p {
     border: 1px solid #000;
-    padding: 0;
-    margin: 0;
+    padding: 1vw;
+    margin-top: 1vw;
   }
   .wrapper main .chapter h2 {
     font-size: 2vw;
   }
   .wrapper main .chapter p {
     font-size: 1.4vw;
+  }
+  .wrapper main .chapter ul li {
+    font-size: 1.2vw;
+  }
+  .wrapper main .chapter .contact-box {
+    margin-top: 1vw;
+  }
+  .wrapper main .chapter .contact-box h3 {
+    font-size: 1.2vw;
   }
   .wrapper footer .location iframe {
     height: 50vh;
