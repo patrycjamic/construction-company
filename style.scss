@@ -10,10 +10,9 @@ $base-color: #c0dfdb;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
-
 .wrapper{
     overflow-x: hidden;
-
+    // height: 100%;
     .top-nav{
         height: 5vh;
         position: fixed;
@@ -26,7 +25,7 @@ $base-color: #c0dfdb;
         p{
             padding: 2% 0 2% 5%;
             font-size: 0.9rem;}
-    }
+        }
     header{
         height: 10vh;
         margin-top: 5vh;
@@ -39,7 +38,6 @@ $base-color: #c0dfdb;
             height: 100%;
             text-decoration: none;
             color: #000;
-            // font-size: 20px;
         }
         i{font-size: 1rem;}
         .menu{display: none;}
@@ -68,7 +66,6 @@ $base-color: #c0dfdb;
                 width:100%;
                 // border: 1px solid red;
                 li{
-                    
                     width:100%;
                     height: 10%;
                     a{
@@ -104,14 +101,16 @@ $base-color: #c0dfdb;
             flex-direction: column;
             h2{font-size: 1.6rem;}
             padding: 5%;
-            // padding-top: 20px;
             h2{padding: 2%; width: 100%; text-align: center;}
-
+            .anchor {
+                display: block;
+                position: relative;
+                bottom: 8vh;
+                visibility: hidden;
+            }
         }
         .introduction{
             height: 25vh;
-            // padding: 0;
-            // border: 1px solid red;
             h2{padding: 1%;}
         }
         .ofirmie, .uslugi, .kontakt{
@@ -121,12 +120,10 @@ $base-color: #c0dfdb;
             img{
                 position: absolute;
                 top: 3%;
-                left: 15%;
-                // transform: translate(-50%, -50%);
-                width: 12%;
+                left: 20%;
+                width: 10vw;
                 opacity: .2;
             }
-            // p{margin-top: 3vh;}
         }
     }
     footer{
@@ -164,19 +161,24 @@ $base-color: #c0dfdb;
         }
     }
 }
-@media screen and(min-width: 1023px){
-    //iPad Pro
-}
-//1200
-@media only screen and(min-width: 1000px){
-    //Laptop
+@media screen and(min-width: 700px){
     .wrapper{
-        // overflow: hidden;
-
-        .top-nav{
-            p{
-                font-size: 1vw;
+        main{
+            .chapter{
+                ul{
+                    margin-top: 20px;
+                    li{font-size: 2vw;}
+                }
+                .contact-box{margin-top: 20px;}
+                img{width: 8vw;}
             }
+        }   
+    }
+}
+@media only screen and(min-width: 1024px){
+    .wrapper{
+        .top-nav{
+            p{font-size: 1vw;}
         }
         header{
             .burger-menu{display: none;}
@@ -203,9 +205,7 @@ $base-color: #c0dfdb;
                             height: 100%;
                             text-transform: uppercase;
                             transition: all .3s;
-                            &:hover{
-                                background-color: $base-color;
-                            }
+                            &:hover{background-color: $base-color;}
                         }
                     }
                 }
@@ -215,41 +215,41 @@ $base-color: #c0dfdb;
             .chapter:nth-child(n+3) {
                 @include flexCustomize(center,center );
                 border: 1px solid red;
-                // height: 50vh;
                 padding: 10vh 5vh;
                 width: 85vw;
-                margin: 0 auto;
+                margin: 2.5vw auto;
                 h2{border: 1px solid blue; padding: 0; margin: 0;}
-                img{display: none;}
+                img{width: 5vw; left: 30vw;}
                 p{border: 1px solid #000; padding:1vw; margin-top: 1vw;}
             }
             .chapter{
                 h2{font-size: 2vw;}
                 p{font-size: 1.4vw;}
                 ul{
-                    li{
-                        font-size: 1.2vw;
-                    }
+                    li{font-size: 1.4vw;}
                 }
                 .contact-box{
                     margin-top: 1vw;
                     h3{font-size: 1.2vw;}
                 }
+                .anchor {bottom: 15vh;}
             }
-
         }
         footer{
             .location{
-                //padding: 0;
                 iframe{
                     height: 50vh;
                     width: 100%;
+                }
+            }
+            .showBtn{
+                .toupBtn{
+                    width: 4vw;
+                    height: 4vw;
+                    .fa-arrow-up{font-size: 2vw; line-height: 4vw;}
                 }
             }
         }
     }
 }
 
-@media only screen and(min-width: 2879px){
-    // .wrapper{font-size: 50px;}
-}
