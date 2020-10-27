@@ -5,28 +5,12 @@ const childs = document.querySelector('.menu ul').children;
 const showBtn = document.querySelector('.showBtn');
 const toTop = document.querySelector('.toupBtn');
 
-// const parentOfMenu = document.createElement('div');
-// const header = document.querySelector('header');
-
-
 window.onresize = function(){ location.reload(); } // przez to buguje sie na mobile, przydatne do testowania
-
-// header.append(parentOfMenu);
-// parentOfMenu.appendChild(casualMenu);
-// parentOfMenu.style.position = "absolute";
 
 
 burgerMenu.addEventListener('click', ()=>{
     casualMenu.style.display = "block";
     casualMenu.classList.add('overlay');
-    // document.querySelector('.overlay').style.height = "100%";//missing animation
-
-    // parentOfMenu.animate([
-    //   {opacity: '0'},
-    //   {opacity: '1'}
-    // ], {
-    //   duration: 400,
-    // })
     casualMenu.animate([
       {opacity: '0'},
       {opacity: '1'}
@@ -41,10 +25,6 @@ burgerMenu.addEventListener('click', ()=>{
         })
     }
 })
-
-// if (window.innerWidth > 1000) {
-//   parentOfMenu.outerHTML = parentOfMenu.innerHTML;
-// }
 
 times.addEventListener('click', ()=>{
     casualMenu.classList.remove('overlay');
@@ -65,5 +45,15 @@ const myScrollFunc = function() {
     showBtn.style.opacity= "0";
   }
 };
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
 
 window.addEventListener("scroll", myScrollFunc);
