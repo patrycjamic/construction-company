@@ -34,7 +34,7 @@ $base-color: #c0dfdb;
             @include flexCustomize(center, center);
             font-family: 'Roboto', sans-serif;
             width: 25%;
-            padding: 20px;
+            // padding: 20px;
             height: 100%;
             text-decoration: none;
             color: #000;
@@ -210,12 +210,10 @@ $base-color: #c0dfdb;
             p{font-size: 1vw;}
         }
         header{
-            .logo{font-size: 1.4vw;}
+            .logo{font-size: 1.4vw; width: 20vw;}
             .menu{
                 ul{
-                    li{
-                        font-size: 1.2vw;
-                    }
+                    li{font-size: 1.2vw;}
                 }
             }
             // .burger-menu{display: none;}
