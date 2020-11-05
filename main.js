@@ -4,6 +4,7 @@ const times = document.querySelector('.fa-times');
 const childs = document.querySelector('.menu ul').children;
 const showBtn = document.querySelector('.showBtn');
 const toTop = document.querySelector('.toupBtn');
+const btn = document.querySelector('.btn');
 
 window.onresize = function(){ location.reload(); } // przez to buguje sie na mobile, przydatne do testowania
 
@@ -56,4 +57,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// function sendEmail(){
+//   Email.send({ 
+//     Host: "smtp.gmail.com", 
+//     Username: "niknoyx@gmail.com", 
+//     Password: "McGonagal080", 
+//     To: 'patrycjamichalek09@gmail.com', 
+//     From: "niknoyx@gmail.com", 
+//     Subject: "Sending Email using javascript", 
+//     Body: "Well that was easy!!", 
+//   }) 
+//     .then(
+//       message => alert("mail sent successfully")
+//     );
+// }
+// btn.addEventListener('click', sendEmail());
 window.addEventListener("scroll", myScrollFunc);
