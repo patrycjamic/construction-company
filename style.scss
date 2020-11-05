@@ -127,6 +127,16 @@ $base-color: #c0dfdb;
             ul{
                 li{
                     padding-top: 2vh;
+                    list-style: none;
+                    &::before{
+                        content: '';
+                        margin-right: 25px;
+                        display: inline-block;
+                        height: 20px;
+                        width: 20px;
+                        background-image: url(images/gear.png);
+                        background-size: cover;
+                    }
                 }
             }
 
@@ -263,7 +273,21 @@ $base-color: #c0dfdb;
             .chapter{
                 ul{
                     margin-top: 20px;
-                    li{font-size: 2vw;}
+                    li{
+                        font-size: 2vw;
+                        // list-style: none;
+
+                        // &::before{
+                        //     content: '';
+                        //     margin-right: 25px;
+                        //     display: inline-block;
+                        //     height: 20px;
+                        //     width: 20px;
+                        //     background-image: url(images/gear.png);
+                        //     background-size: cover;
+                        // }
+                    }
+
                 }
                 .contact-box{margin-top: 20px;}
                 img{width: 8vw;}
@@ -316,7 +340,6 @@ $base-color: #c0dfdb;
         }
         main{
             .chapter:nth-child(n+3) {
-                border: 1px solid red;
                 @include flexCustomize(center,center );
                 border-top: 10px double $base-color;
                 padding: 10vh 5vh;

@@ -216,6 +216,17 @@
 
 .wrapper main .ofirmie ul li, .wrapper main .uslugi ul li, .wrapper main .kontakt ul li {
   padding-top: 2vh;
+  list-style: none;
+}
+
+.wrapper main .ofirmie ul li::before, .wrapper main .uslugi ul li::before, .wrapper main .kontakt ul li::before {
+  content: '';
+  margin-right: 25px;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-image: url(images/gear.png);
+  background-size: cover;
 }
 
 .wrapper main .kontakt .form-group {
@@ -413,7 +424,6 @@
     font-size: 1.2vw;
   }
   .wrapper main .chapter:nth-child(n+3) {
-    border: 1px solid red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
