@@ -133,17 +133,12 @@ $base-color: #c0dfdb;
 
             padding: 5%;
             h2{padding: 2%; width: 100%; text-align: center};
-
-
-
-
             .anchor {
                 display: block;
                 position: relative;
                 bottom: 8vh;
                 visibility: hidden;
             }
-
         }
         .introduction{
             height: 25vh;
@@ -176,14 +171,11 @@ $base-color: #c0dfdb;
                     }
                 }
             }
-
         }
-
         .kontakt{
             .form-group{
                 margin-bottom:1.5rem;
                 transition:all .3s;
-
                 .form-label{
                     font-size:.75rem;
                     display:block;
@@ -205,7 +197,6 @@ s
                         border-color: #254ca1;
                         outline:none;
                     }
-
                     &:invalid:focus{
                         border-color: red;
                     }
@@ -234,19 +225,22 @@ s
                     // color:var(--font-hover-color);
                 }
             }
-            
         }
     }
     footer{
         .location{
-            background-color: $base-color;
             width: 100%;
             text-align: center;
             iframe{
-                width: 90%;
-                margin: 0 auto;
+                width: 100%;
             }
         }
+        .info{
+            @include flexCustomize(space-evenly,center);
+            font-size:1.2rem;
+            padding: 10px;
+        }
+
         .copy{
             text-align: center;
             padding: 5px;
@@ -305,6 +299,7 @@ s
         }
         main{
             .chapter{
+                img{left: 30vw;}
                 ul{
                     margin-top: 20px;
                     li{

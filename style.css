@@ -321,14 +321,26 @@ s
 }
 
 .wrapper footer .location {
-  background-color: #c0dfdb;
   width: 100%;
   text-align: center;
 }
 
 .wrapper footer .location iframe {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+}
+
+.wrapper footer .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  padding: 10px;
 }
 
 .wrapper footer .copy {
@@ -413,6 +425,9 @@ s
   }
   .wrapper header .menu ul li a:hover {
     background-color: #c0dfdb;
+  }
+  .wrapper main .chapter img {
+    left: 30vw;
   }
   .wrapper main .chapter ul {
     margin-top: 20px;
