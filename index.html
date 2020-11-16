@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta property="og:title" content="MIDA - firma budowlana"> -->
-    <!-- <meta property="og:description" content="Firma oferująca usługi remontowo budowlane oraz przewozowo-transportowe"> -->
     <meta property="og:image" content="https://images.app.goo.gl/6dWgcf8Ed9axoHBg6">
-    <!-- <meta property="og:url" content="https://patrycjamic.github.io/construction-company/"> -->
     <title>MIDA - usługi remontowo-budowlane</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/favicon.png"/>
@@ -33,20 +30,23 @@
             </div>
         </header>
         <main>
-            <div class="img-container"></div>
+            <div class="img-container">
+                <div class="baner"></div>
+                <!-- <img src="images/cars.jpg" alt=""> -->
+            </div>
             <section class="introduction chapter">
                 <h2>Wojciech Michałek</h2>
                 <p>Usługi przewozowo-transportowe oraz remontowo-budowlane</p>
             </section>
             <section class="ofirmie chapter">
                 <a href="" class="anchor" id="ofirmie"></a>
-                <h2>O firmie</h2>
+                <h2 class="title">O firmie</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum hic ullam voluptatibus officia consequatur eum, neque, in iusto provident quibusdam illum aliquam, exercitationem laborum sapiente ratione molestiae corrupti vero velit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni maiores enim odio quia tempora aliquid ut fugit culpa iusto natus. Aperiam id aliquam ipsa! Est aut quas sunt aspernatur similique! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dolorem cum sint? Quasi officiis eum, omnis voluptate consectetur exercitationem fugit deleniti. Aliquid saepe officiis eveniet quod, libero accusantium eum vitae?</p>
                 <img src="images/employee.png" alt="">
             </section>
             <section  class="uslugi chapter"> <!--id="uslugi"-->
                 <a href="" class="anchor" id="uslugi"></a>
-                <h2>Usługi</h2>
+                <h2 class="title">Usługi</h2>
                 <p>Oferuję usługi w zakresie</p>
                 <ul>
                     <li>montaż i wymiana rynien</li>
@@ -61,13 +61,9 @@
             </section>
             <section class="kontakt chapter">
                 <a href="" class="anchor" id="kontakt"></a>
-                <h2>Kontakt</h2>
+                <h2 class="title">Kontakt</h2>
                 <p>Osoby zainteresowane naszymi usłagami lub poszukujące odpowiedzi na konkretne pytania zapraszamy do kontaktu telefonicznego lub mailowego</p>
                 <img src="images/contact.png" alt="">
-                <!-- <div class="contact-box">
-                    <h3>Telefon: 502 403 687</h3>
-                    <h3>E-mail: mida@gmail.com</h3>
-                </div> -->
                 <div class="webform-container">
                     <form method="POST" class="form">
                         <div class="form-group">
@@ -91,6 +87,7 @@
                         </div>
                     </form>
                 </div>
+                <!-- <input type="button" value="Send Email" onclick="sendEmail()"> -->
             </section>
         </main>
         <footer>
@@ -109,7 +106,7 @@
         </footer>
     </div>
     <script src="main.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 
 </body>
 </html>

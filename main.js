@@ -57,19 +57,37 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// function sendEmail(){
-//   Email.send({ 
-//     Host: "smtp.gmail.com", 
-//     Username: "niknoyx@gmail.com", 
-//     Password: "McGonagal080", 
-//     To: 'patrycjamichalek09@gmail.com', 
-//     From: "niknoyx@gmail.com", 
-//     Subject: "Sending Email using javascript", 
-//     Body: "Well that was easy!!", 
-//   }) 
-//     .then(
-//       message => alert("mail sent successfully")
-//     );
-// }
-// btn.addEventListener('click', sendEmail());
+
+// function sendEmail() {
+//   Email.send({
+//       Host : "smtp.mailtrap.io",
+//       Username : "<Mailtrap username>",
+//       Password : "<Mailtrap password>",
+//       To : 'patrycjamichalek09@gmail.com',
+//       From : "sender@example.com",
+//       Subject : "Test email",
+//       Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+//   }).then(
+//     message => alert(message)
+//   );
+//   }
+
+function scrollAppear(){
+  let text = document.querySelectorAll(".title");
+  let textPosition; 
+  let screenPosition = window.innerHeight /1;
+
+  text.forEach(function(item){
+      textPosition = item.getBoundingClientRect().top;
+      if(textPosition < screenPosition){
+          item.classList.add('appear');
+      }
+  })
+
+}
+
+
+
 window.addEventListener("scroll", myScrollFunc);
+
+window.addEventListener('scroll', scrollAppear);

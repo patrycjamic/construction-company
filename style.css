@@ -142,15 +142,16 @@
   border-bottom: 2px solid #c0dfdb;
 }
 
-.wrapper main .img-container {
-  background-image: url(images/auto.jpg);
-  width: 100vw;
+.wrapper main .img-container .baner {
+  background: url("images/cars.jpg");
+  width: 70vw;
   height: 60vh;
   background-size: cover;
-  background-position: center left;
+  background-position: 20% 65%;
 }
 
 .wrapper main .chapter {
+  line-height: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,6 +174,21 @@
 
 .wrapper main .chapter h2 {
   font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.wrapper main .chapter .title {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: 0.8s all ease-in-out;
+  transition: 0.8s all ease-in-out;
+}
+
+.wrapper main .chapter .appear {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .wrapper main .chapter h2 {
@@ -230,13 +246,13 @@
 }
 
 .wrapper main .kontakt .form-group {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
 .wrapper main .kontakt .form-group .form-label {
-  font-size: .75em;
+  font-size: .75rem;
   display: block;
   opacity: 0;
   -webkit-transition: all .3s;
@@ -252,11 +268,12 @@
   border-color: #ccc;
   border-style: none none solid none;
   width: 100%;
-  font-size: 1.25em;
+  font-size: 1.2rem;
   -webkit-transition: all .6s;
   transition: all .6s;
 }
 
+s
 .wrapper main .kontakt .form-group .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -306,7 +323,6 @@
 .wrapper footer .location {
   background-color: #c0dfdb;
   width: 100%;
-  padding: 2%;
   text-align: center;
 }
 
@@ -318,11 +334,11 @@
 .wrapper footer .copy {
   text-align: center;
   padding: 5px;
-  background-color: #3d7781;
+  background-color: #c0dfdb;
 }
 
 .wrapper footer .copy .author {
-  color: #fff;
+  color: #1c6d4b;
 }
 
 .wrapper footer .showBtn {
@@ -435,7 +451,7 @@
             align-items: center;
     border-top: 10px double #c0dfdb;
     padding: 10vh 5vh;
-    width: 85vw;
+    width: 80vw;
     margin: 2.5vw auto;
   }
   .wrapper main .chapter:nth-child(n+3) img {
@@ -446,6 +462,9 @@
   .wrapper main .chapter:nth-child(n+3) p {
     padding: 1vw;
     margin-top: 1vw;
+  }
+  .wrapper main .kontakt .form-control {
+    font-size: 1.2vw;
   }
   .wrapper main .chapter h2 {
     font-size: 2vw;
@@ -467,7 +486,7 @@
     bottom: 15vh;
   }
   .wrapper footer .location iframe {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
   }
   .wrapper footer .showBtn .toupBtn {

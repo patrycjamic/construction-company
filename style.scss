@@ -10,6 +10,8 @@ $base-color: #c0dfdb;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
+
+
 .wrapper{
     overflow-x: hidden;
     // height: 100%;
@@ -88,25 +90,60 @@ $base-color: #c0dfdb;
     }
     main{
         .img-container{
-            background-image: url(images/auto.jpg);
-            width: 100vw;
-            height: 60vh;
-            background-size: cover;
-            background-position: center left;
+            // width: 100vw;
+            // height: 60vh;
+            // img{
+            //     // width: 60vw;
+            //     height: 100%;
+            //     scale: 10;
+            // }
+            // background-color: #88694b94;
+
+            .baner{
+                background: url('images/cars.jpg');
+                width: 70vw;//100vw
+                height: 60vh;
+                background-size: cover;
+                background-position: 20% 65%;
+            }
+
         }
+
+
+
         .chapter{
+            // opacity: 0;
+            // transform: translateY(20px);
+
+            line-height: 32px;
             @include flexCustomize(space-evenly, center);
             p{font-size: 1.2rem;}
             flex-direction: column;
-            h2{font-size: 1.6rem;}
+            h2{font-size: 1.6rem;
+                margin-bottom: 10px;
+            }
+            .title{
+                opacity: 0;
+                transform: translateY(20px);
+                transition: 0.8s all ease-in-out;}
+            .appear{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+
             padding: 5%;
-            h2{padding: 2%; width: 100%; text-align: center;}
+            h2{padding: 2%; width: 100%; text-align: center};
+
+
+
+
             .anchor {
                 display: block;
                 position: relative;
                 bottom: 8vh;
                 visibility: hidden;
             }
+
         }
         .introduction{
             height: 25vh;
@@ -144,13 +181,11 @@ $base-color: #c0dfdb;
 
         .kontakt{
             .form-group{
-                margin-bottom:1.5em;
+                margin-bottom:1.5rem;
                 transition:all .3s;
 
                 .form-label{
-                    font-size:.75em;
-                    // border: 1px solid blue;
-                    // color:pink;
+                    font-size:.75rem;
                     display:block;
                     opacity:0;
                     transition: all .3s;
@@ -162,9 +197,9 @@ $base-color: #c0dfdb;
                     border-color:#ccc;
                     border-style:none none solid none;
                     width:100%;
-                    font-size:1.25em;
+                    font-size:1.2rem;
                     transition:all .6s;
-
+s
                     &:focus{
                         box-shadow: none;
                         border-color: #254ca1;
@@ -206,7 +241,6 @@ $base-color: #c0dfdb;
         .location{
             background-color: $base-color;
             width: 100%;
-            padding: 2%;
             text-align: center;
             iframe{
                 width: 90%;
@@ -216,8 +250,8 @@ $base-color: #c0dfdb;
         .copy{
             text-align: center;
             padding: 5px;
-            background-color: #3d7781;
-            .author{color: #fff;}
+            background-color: $base-color;
+            .author{color: rgb(28, 109, 75);}
         }
         .showBtn{
             opacity: 0;
@@ -343,11 +377,18 @@ $base-color: #c0dfdb;
                 @include flexCustomize(center,center );
                 border-top: 10px double $base-color;
                 padding: 10vh 5vh;
-                width: 85vw;
+                width: 80vw;
                 margin: 2.5vw auto;
                 // h2{border: 1px solid blue; padding: 0; margin: 0;}
                 img{top: 12vh; width: 5vw; left: 30vw;}
                 p{ padding:1vw; margin-top: 1vw;}//border: 1px solid #000;
+            }
+
+            .kontakt{
+
+                .form-control{
+                    font-size: 1.2vw;
+                }
             }
 
             .chapter{
@@ -372,14 +413,16 @@ $base-color: #c0dfdb;
         footer{
             .location{
                 iframe{
-                    height: 50vh;
+                    height: 60vh;
                     width: 100%;
                 }
             }
+            // .copy{padding: 10px;}
             .showBtn{
                 .toupBtn{
                     width: 4vw;
                     height: 4vw;
+                    
                     .fa-arrow-up{font-size: 2vw; line-height: 4vw;}
                 }
             }
