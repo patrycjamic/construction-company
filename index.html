@@ -65,7 +65,7 @@
                 <p>Osoby zainteresowane naszymi usłagami lub poszukujące odpowiedzi na konkretne pytania zapraszamy do kontaktu telefonicznego lub mailowego</p>
                 <img src="images/contact.png" alt="">
                 <div class="webform-container">
-                    <form method="POST" class="form">
+                    <form method="POST" action="https://formspree.io/f/xzbkvkvo" class="form" id="my-form">
                         <div class="form-group">
                             <label for="name" class="form-label">Imię</label>
                             <input type="text" class="form-control" id="name" name="name" placeholder="Jan Kowalski" tabindex="1" required >
@@ -87,6 +87,7 @@
                         </div>
                     </form>
                 </div>
+                <div id="status"></div>
                 <!-- <input type="button" value="Send Email" onclick="sendEmail()"> -->
             </section>
         </main>
