@@ -98,7 +98,8 @@ $base-color: #c0dfdb;
         .chapter{
             line-height: 32px;
             @include flexCustomize(space-evenly, center);
-            p{font-size: 1.2rem;}
+            p{font-size: 1.2rem;
+  }
             flex-direction: column;
             h2{font-size: 1.6rem;
                 margin-bottom: 10px;
@@ -126,6 +127,8 @@ $base-color: #c0dfdb;
             h2{padding: 1%;}
         }
         .ofirmie, .uslugi, .kontakt{
+            .other-align{
+                font-weight: bold;}
             text-align: justify;
             margin-bottom: 30px;
             position: relative;
@@ -155,58 +158,66 @@ $base-color: #c0dfdb;
         }
         .kontakt{
             .webform-container{
-                .form-group{
-                    margin-bottom:1.5rem;
-                    transition:all .3s;
-                    .form-label{
-                        font-size:.75rem;
-                        display:block;
-                        opacity:0;
-                        transition: all .3s;
-                        transform:translateX(-50px);
-                    }
-                    .form-control{
-                        box-shadow:none;
-                        border-radius:0;
-                        border-color:#ccc;
-                        border-style:none none solid none;
-                        width:100%;
-                        font-size:1.2rem;
-                        transition:all .6s;
-    
-                        &:focus{
-                            box-shadow: none;
-                            border-color: #254ca1;
-                            outline:none;
+                @include flexCustomize(center, space-around);
+                width: 100%;
+                border: 1px solid red;
+                flex-direction: column;
+                .form{
+                    border: 1px solid green;
+                    .form-group{
+                        margin-bottom:1.5rem;
+                        transition:all .3s;
+                        .form-label{
+                            font-size:.75rem;
+                            display:block;
+                            opacity:0;
+                            transition: all .3s;
+                            transform:translateX(-50px);
                         }
-                        &:invalid:focus{
-                            border-color: red;
+                        .form-control{
+                            box-shadow:none;
+                            border-radius:0;
+                            border-color:#ccc;
+                            border-style:none none solid none;
+                            width:100%;
+                            font-size:1.2rem;
+                            transition:all .6s;
+        
+                            &:focus{
+                                box-shadow: none;
+                                border-color: #254ca1;
+                                outline:none;
+                            }
+                            &:invalid:focus{
+                                border-color: red;
+                            }
+                        }
+                        .form-control::placeholder{
+                            color:#aaa;
+                        }
+        
+                        textarea{
+                            resize: none;
                         }
                     }
-                    .form-control::placeholder{
-                        color:#aaa;
-                    }
-    
-                    textarea{
-                        resize: none;
+        
+                    .btn{
+                        background: 0 0 #fff;
+                        border:1px solid #aaa;
+                        border-radius:3px;
+                        color: #254ca1;
+                        font-size:1em;
+                        padding:10 50px;
+                        text-transform:uppercase;
+                        padding: 10px;
+        
+                        &:hover{
+                            border-color:$base-color;
+                            // color:var(--font-hover-color);
+                        }
                     }
                 }
-    
-                .btn{
-                    background: 0 0 #fff;
-                    border:1px solid #aaa;
-                    border-radius:3px;
-                    color: #254ca1;
-                    font-size:1em;
-                    padding:10 50px;
-                    text-transform:uppercase;
-                    padding: 10px;
-    
-                    &:hover{
-                        border-color:$base-color;
-                        // color:var(--font-hover-color);
-                    }
-                }
+
             }
             #status {
                 width: 90%;
