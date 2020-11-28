@@ -88,11 +88,14 @@ $base-color: #c0dfdb;
     main{
         .img-container{
             .baner{
-                background: url('images/cars.jpg');
-                width: 70vw;//100vw
+                display: flex;
                 height: 60vh;
-                background-size: cover;
-                background-position: 20% 65%;
+                .img2{
+                    background: url('images/cars.jpg');
+                    flex: 1;
+                    background-size: cover;
+                    background-position: 86% 20%;
+                }
             }
         }
         .chapter{
@@ -157,13 +160,27 @@ $base-color: #c0dfdb;
             }
         }
         .kontakt{
+
             .webform-container{
-                @include flexCustomize(center, space-around);
+                margin-top: 5%;
+                display: flex;
+                align-items: center;
+                background-color: $base-color;
                 width: 100%;
-                border: 1px solid red;
                 flex-direction: column;
+                .contact-info{
+                    padding: 0;
+                    margin: 8px;
+                    p{font-size: 1.1rem;
+                        .bold{font-weight: bold;}
+                    padding: 0; margin: 0;}
+                }
                 .form{
-                    border: 1px solid green;
+                    background-color: white;
+                    width: 90%;
+                    padding: 20px;
+                    margin-bottom: 50px;
+                    // border: 1px solid green;
                     .form-group{
                         margin-bottom:1.5rem;
                         transition:all .3s;
@@ -180,9 +197,8 @@ $base-color: #c0dfdb;
                             border-color:#ccc;
                             border-style:none none solid none;
                             width:100%;
-                            font-size:1.2rem;
+                            font-size:1.1rem;
                             transition:all .6s;
-        
                             &:focus{
                                 box-shadow: none;
                                 border-color: #254ca1;
@@ -194,28 +210,27 @@ $base-color: #c0dfdb;
                         }
                         .form-control::placeholder{
                             color:#aaa;
+                            padding-left: 7px;
                         }
-        
                         textarea{
                             resize: none;
                         }
                     }
-        
                     .btn{
                         background: 0 0 #fff;
                         border:1px solid #aaa;
                         border-radius:3px;
-                        color: #254ca1;
+                        color: #000;
                         font-size:1em;
                         padding:10 50px;
                         text-transform:uppercase;
                         padding: 10px;
-        
                         &:hover{
-                            border-color:$base-color;
-                            // color:var(--font-hover-color);
+                            border-color: rgb(25, 129, 155);
+                            color: rgb(25, 129, 155);
                         }
                     }
+                    
                 }
 
             }
@@ -330,6 +345,27 @@ $base-color: #c0dfdb;
                 .contact-box{margin-top: 20px;}
                 img{width: 8vw;}
             }
+            .kontakt{
+                .webform-container{
+                        background-color: $base-color;
+                        border: 1px solid #ccc;
+                        padding-bottom: 25px;
+                        width: 65%;
+                        flex-direction: column;
+                    .form{
+                        background-color: white;
+                        padding: 20px;
+                        .form-group{
+                            margin-bottom:1rem;
+                            .form-control{
+                                font-size: 1.2vw;
+                            }
+                        }
+
+
+                    }
+                }
+            }
         }   
     }
 }
@@ -347,6 +383,18 @@ $base-color: #c0dfdb;
             }
         }
         main{
+            .baner{
+                display: flex;
+                height: 60vh;
+                .img2{display: none;}
+                .img1{
+                    background: url('images/carss.jpg');
+                    flex: 1;
+                    background-size: cover;
+                    background-position: 20% 65%;
+                }
+            }
+
             .chapter:nth-child(n+3) {
                 @include flexCustomize(center,center );
                 border-top: 10px double $base-color;
@@ -355,11 +403,6 @@ $base-color: #c0dfdb;
                 margin: 2.5vw auto;
                 img{top: 12vh; width: 5vw; left: 30vw;}
                 p{ padding:1vw; margin-top: 1vw;}//border: 1px solid #000;
-            }
-            .kontakt{
-                .form-control{
-                    font-size: 1.2vw;
-                }
             }
             .chapter{
                 h2{font-size: 2vw;}

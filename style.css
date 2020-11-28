@@ -143,11 +143,19 @@
 }
 
 .wrapper main .img-container .baner {
-  background: url("images/cars.jpg");
-  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 60vh;
+}
+
+.wrapper main .img-container .baner .img2 {
+  background: url("images/cars.jpg");
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background-size: cover;
-  background-position: 20% 65%;
+  background-position: 86% 20%;
 }
 
 .wrapper main .chapter {
@@ -250,25 +258,41 @@
 }
 
 .wrapper main .kontakt .webform-container {
+  margin-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: space-around;
-      -ms-flex-align: space-around;
-          align-items: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c0dfdb;
   width: 100%;
-  border: 1px solid red;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
+.wrapper main .kontakt .webform-container .contact-info {
+  padding: 0;
+  margin: 8px;
+}
+
+.wrapper main .kontakt .webform-container .contact-info p {
+  font-size: 1.1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper main .kontakt .webform-container .contact-info p .bold {
+  font-weight: bold;
+}
+
 .wrapper main .kontakt .webform-container .form {
-  border: 1px solid green;
+  background-color: white;
+  width: 90%;
+  padding: 20px;
+  margin-bottom: 50px;
 }
 
 .wrapper main .kontakt .webform-container .form .form-group {
@@ -294,7 +318,7 @@
   border-color: #ccc;
   border-style: none none solid none;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   -webkit-transition: all .6s;
   transition: all .6s;
 }
@@ -312,18 +336,22 @@
 
 .wrapper main .kontakt .webform-container .form .form-group .form-control::-webkit-input-placeholder {
   color: #aaa;
+  padding-left: 7px;
 }
 
 .wrapper main .kontakt .webform-container .form .form-group .form-control:-ms-input-placeholder {
   color: #aaa;
+  padding-left: 7px;
 }
 
 .wrapper main .kontakt .webform-container .form .form-group .form-control::-ms-input-placeholder {
   color: #aaa;
+  padding-left: 7px;
 }
 
 .wrapper main .kontakt .webform-container .form .form-group .form-control::placeholder {
   color: #aaa;
+  padding-left: 7px;
 }
 
 .wrapper main .kontakt .webform-container .form .form-group textarea {
@@ -334,7 +362,7 @@
   background: 0 0 #fff;
   border: 1px solid #aaa;
   border-radius: 3px;
-  color: #254ca1;
+  color: #000;
   font-size: 1em;
   padding: 10 50px;
   text-transform: uppercase;
@@ -342,7 +370,8 @@
 }
 
 .wrapper main .kontakt .webform-container .form .btn:hover {
-  border-color: #c0dfdb;
+  border-color: #19819b;
+  color: #19819b;
 }
 
 .wrapper main .kontakt #status {
@@ -518,6 +547,26 @@
   .wrapper main .chapter img {
     width: 8vw;
   }
+  .wrapper main .kontakt .webform-container {
+    background-color: #c0dfdb;
+    border: 1px solid #ccc;
+    padding-bottom: 25px;
+    width: 65%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper main .kontakt .webform-container .form {
+    background-color: white;
+    padding: 20px;
+  }
+  .wrapper main .kontakt .webform-container .form .form-group {
+    margin-bottom: 1rem;
+  }
+  .wrapper main .kontakt .webform-container .form .form-group .form-control {
+    font-size: 1.2vw;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -530,6 +579,23 @@
   }
   .wrapper header .menu ul li {
     font-size: 1.2vw;
+  }
+  .wrapper main .baner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60vh;
+  }
+  .wrapper main .baner .img2 {
+    display: none;
+  }
+  .wrapper main .baner .img1 {
+    background: url("images/carss.jpg");
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-size: cover;
+    background-position: 20% 65%;
   }
   .wrapper main .chapter:nth-child(n+3) {
     display: -webkit-box;
@@ -554,9 +620,6 @@
   .wrapper main .chapter:nth-child(n+3) p {
     padding: 1vw;
     margin-top: 1vw;
-  }
-  .wrapper main .kontakt .form-control {
-    font-size: 1.2vw;
   }
   .wrapper main .chapter h2 {
     font-size: 2vw;
