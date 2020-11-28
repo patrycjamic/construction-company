@@ -289,7 +289,7 @@
 }
 
 .wrapper main .kontakt .webform-container .form {
-  background-color: white;
+  background-color: #fff;
   width: 90%;
   padding: 20px;
   margin-bottom: 50px;
@@ -391,7 +391,7 @@
 
 .wrapper main .kontakt #status.error {
   background-color: #fa815c;
-  color: white;
+  color: #fff;
   -webkit-animation: status 2s ease forwards;
           animation: status 2s ease forwards;
 }
@@ -558,7 +558,7 @@
             flex-direction: column;
   }
   .wrapper main .kontakt .webform-container .form {
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
   }
   .wrapper main .kontakt .webform-container .form .form-group {

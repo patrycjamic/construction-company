@@ -160,7 +160,6 @@ $base-color: #c0dfdb;
             }
         }
         .kontakt{
-
             .webform-container{
                 margin-top: 5%;
                 display: flex;
@@ -176,11 +175,10 @@ $base-color: #c0dfdb;
                     padding: 0; margin: 0;}
                 }
                 .form{
-                    background-color: white;
+                    background-color: #fff;
                     width: 90%;
                     padding: 20px;
                     margin-bottom: 50px;
-                    // border: 1px solid green;
                     .form-group{
                         margin-bottom:1.5rem;
                         transition:all .3s;
@@ -230,9 +228,7 @@ $base-color: #c0dfdb;
                             color: rgb(25, 129, 155);
                         }
                     }
-                    
                 }
-
             }
             #status {
                 width: 90%;
@@ -248,7 +244,7 @@ $base-color: #c0dfdb;
             }
             #status.error {
                 background-color: rgb(250, 129, 92);
-                color: white;
+                color: #fff;
                 animation: status 2s ease forwards;
             }
             @keyframes status {
@@ -353,7 +349,7 @@ $base-color: #c0dfdb;
                         width: 65%;
                         flex-direction: column;
                     .form{
-                        background-color: white;
+                        background-color: #fff;
                         padding: 20px;
                         .form-group{
                             margin-bottom:1rem;
@@ -361,7 +357,6 @@ $base-color: #c0dfdb;
                                 font-size: 1.2vw;
                             }
                         }
-
 
                     }
                 }
