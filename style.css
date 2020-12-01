@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper {
@@ -25,7 +25,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #c0dfdb;
+  background-color: #719fd3;
 }
 
 .wrapper .top-nav .bold-text {
@@ -139,7 +139,7 @@
   display: block;
   margin: 0 auto;
   width: 50%;
-  border-bottom: 2px solid #c0dfdb;
+  border-bottom: 2px solid #719fd3;
 }
 
 .wrapper main .img-container .baner {
@@ -173,7 +173,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5%;
+  padding: 2%;
 }
 
 .wrapper main .chapter p {
@@ -228,6 +228,7 @@
 
 .wrapper main .ofirmie .other-align, .wrapper main .uslugi .other-align, .wrapper main .kontakt .other-align {
   font-weight: bold;
+  text-align: center;
 }
 
 .wrapper main .ofirmie h2, .wrapper main .uslugi h2, .wrapper main .kontakt h2 {
@@ -257,6 +258,10 @@
   background-size: cover;
 }
 
+.wrapper main .kontakt {
+  margin: 0;
+}
+
 .wrapper main .kontakt .webform-container {
   margin-top: 5%;
   display: -webkit-box;
@@ -265,7 +270,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #c0dfdb;
+  background-color: #719fd3;
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -374,58 +379,6 @@
   color: #19819b;
 }
 
-.wrapper main .kontakt #status {
-  width: 90%;
-  max-width: 400px;
-  text-align: center;
-  padding: 10px;
-  margin: 5px auto;
-  border-radius: 8px;
-}
-
-.wrapper main .kontakt #status.success {
-  background-color: #d3fa99;
-  -webkit-animation: status 2s ease forwards;
-          animation: status 2s ease forwards;
-}
-
-.wrapper main .kontakt #status.error {
-  background-color: #fa815c;
-  color: #fff;
-  -webkit-animation: status 2s ease forwards;
-          animation: status 2s ease forwards;
-}
-
-@-webkit-keyframes status {
-  0% {
-    opacity: 1;
-    pointer-events: all;
-  }
-  90% {
-    opacity: 1;
-    pointer-events: all;
-  }
-  100% {
-    opacity: 0;
-    pointer-events: none;
-  }
-}
-
-@keyframes status {
-  0% {
-    opacity: 1;
-    pointer-events: all;
-  }
-  90% {
-    opacity: 1;
-    pointer-events: all;
-  }
-  100% {
-    opacity: 0;
-    pointer-events: none;
-  }
-}
-
 .wrapper footer .location {
   width: 100%;
   text-align: center;
@@ -439,20 +392,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.2rem;
-  padding: 10px;
+  height: 10vh;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+  background-color: #305b8d;
 }
 
 .wrapper footer .copy {
   text-align: center;
   padding: 5px;
-  background-color: #c0dfdb;
+  background-color: #719fd3;
 }
 
 .wrapper footer .copy .author {
@@ -530,41 +486,58 @@
     transition: all .3s;
   }
   .wrapper header .menu ul li a:hover {
-    background-color: #c0dfdb;
+    background-color: #719fd3;
   }
-  .wrapper main .chapter img {
+  .wrapper main .chapter:nth-child(n+3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 10px double #719fd3;
+    padding: 10vh 5vh;
+    margin: 0 auto;
+  }
+  .wrapper main .chapter:nth-child(n+3) img {
+    top: 12vh;
+    width: 5vw;
     left: 30vw;
   }
-  .wrapper main .chapter ul {
-    margin-top: 20px;
+  .wrapper main .chapter:nth-child(n+3) p {
+    padding: 1vw;
+    margin-top: 1vw;
   }
-  .wrapper main .chapter ul li {
-    font-size: 2vw;
+  .wrapper main .chapter:nth-child(n+3) .tekst {
+    border: 1px solid black;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
   }
-  .wrapper main .chapter .contact-box {
-    margin-top: 20px;
+  .wrapper main .kontakt .container {
+    border: 1px solid red;
+    width: 100%;
   }
-  .wrapper main .chapter img {
-    width: 8vw;
-  }
-  .wrapper main .kontakt .webform-container {
-    background-color: #c0dfdb;
+  .wrapper main .kontakt .container .webform-container {
+    background-color: #719fd3;
     border: 1px solid #ccc;
-    padding-bottom: 25px;
-    width: 65%;
+    width: 40%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .wrapper main .kontakt .webform-container .form {
+  .wrapper main .kontakt .container .webform-container .form {
     background-color: #fff;
     padding: 20px;
   }
-  .wrapper main .kontakt .webform-container .form .form-group {
+  .wrapper main .kontakt .container .webform-container .form .form-group {
     margin-bottom: 1rem;
   }
-  .wrapper main .kontakt .webform-container .form .form-group .form-control {
+  .wrapper main .kontakt .container .webform-container .form .form-group .form-control {
     font-size: 1.2vw;
   }
 }
@@ -596,30 +569,6 @@
             flex: 1;
     background-size: cover;
     background-position: 20% 65%;
-  }
-  .wrapper main .chapter:nth-child(n+3) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-top: 10px double #c0dfdb;
-    padding: 10vh 5vh;
-    width: 80vw;
-    margin: 2.5vw auto;
-  }
-  .wrapper main .chapter:nth-child(n+3) img {
-    top: 12vh;
-    width: 5vw;
-    left: 30vw;
-  }
-  .wrapper main .chapter:nth-child(n+3) p {
-    padding: 1vw;
-    margin-top: 1vw;
   }
   .wrapper main .chapter h2 {
     font-size: 2vw;

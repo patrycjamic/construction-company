@@ -14,7 +14,9 @@
     <meta property="og:image" content="images/cars.jpg"/>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="images/favicon.png"/>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
@@ -50,18 +52,21 @@
             </section>
             <section class="ofirmie chapter">
                 <a href="" class="anchor" id="ofirmie"></a>
-                <h2 class="title">O firmie</h2>
-                <p>MIDA to mała firma dekarska działająca na rynku od 2001 roku. Od lat działamy na terenie Śląska i Zagłębia, obejmując zasięgiem swoich usług wszystkie większe i mniejsze miasta oraz ich okolice – Bytom, Chorzów, Katowice, Mysłowice, Sosnowiec, Jaworzno, Tychy i inne. Posiadamy duże doświadczenie w branży. Dzięki naszemu prawie 20-letniemu doświadczeniu świadczymy usługi na wysokim poziomie. Gwarantujemy uczciowość, terminowość oraz wysoką jakość przy jednoczesnym zachowaniu konkurencyjnych cen. Do każdego zlecenia podchodzimy indywidualnie. Nasi klienci to zarówno osoby prywatne jak i liczne przedsiębiorstwa, które znają nasza fachowość.
-                </p>
-                <p class="other-align">Zapraszamy do kontaktu!</p>
-
-                
-                <img src="images/employee.png" alt="">
+                <div class="tekst">
+                    <h2 class="title">O firmie</h2>
+                    <p>MIDA to mała firma dekarska działająca na rynku od 2001 roku. Od lat działamy na terenie Śląska, obejmując zasięgiem swoich usług wszystkie większe i mniejsze miasta oraz ich okolice – Katowice, Mysłowice, Sosnowiec, Jaworzno, Tychy i inne. Posiadamy duże doświadczenie w branży. Dzięki naszemu prawie 20-letniemu doświadczeniu świadczymy usługi na wysokim poziomie. Gwarantujemy uczciowość, terminowość oraz wysoką jakość przy jednoczesnym zachowaniu konkurencyjnych cen. Do każdego zlecenia podchodzimy indywidualnie. Nasi klienci to zarówno osoby prywatne jak i liczne przedsiębiorstwa, które znają nasza fachowość.
+                    </p>
+                    <p class="other-align">Zapraszamy do kontaktu!</p>
+                    <img src="images/employee.png" alt="">
+                </div>
             </section>
             <section  class="uslugi chapter"> <!--id="uslugi"-->
                 <a href="" class="anchor" id="uslugi"></a>
-                <h2 class="title">Usługi</h2>
-                <p>Oferuję usługi w zakresie</p>
+                <div class="tekst">
+                    <h2 class="title">Usługi</h2>
+                    <p>Oferuję usługi w zakresie</p>
+                    <img src="images/services.png" alt="">
+                </div>
                 <ul>
                     <li>montaż i wymiana rynien</li>
                     <li>roboty remontowe</li>
@@ -71,44 +76,47 @@
                     <li>obcinanie gałęzi</li>
                     <li>ścinianie drzew</li>
                 </ul>
-                <img src="images/services.png" alt="">
+                
             </section>
             <section class="kontakt chapter">
                 <a href="" class="anchor" id="kontakt"></a>
-                <h2 class="title">Kontakt</h2>
-                <p>Osoby zainteresowane naszymi usłagami lub poszukujące odpowiedzi na konkretne pytania zapraszamy do kontaktu telefonicznego lub mailowego.
-
-                </p>
-                <img src="images/contact.png" alt="">
-                <div class="webform-container">
-                    <div class="contact-info">
-                        <p> <span class="bold">Telefon</span>: 502 403 687</p>
-                        <p><span class="bold">Email</span>: mida@gmail.com</p>
-                    </div>
-                    <form method="POST" action="https://formspree.io/f/xzbkvkvo" class="form" id="my-form">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Imię</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Imię i Nazwisko" tabindex="1" required >
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Twój e-mail</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" tabindex="2" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject" class="form-label">Temat</label>
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Temat" tabindex="3" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">Wiadomość</label>
-                            <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Wpisz wiadomość" tabindex="4"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn">Wyślij</button>
-                        </div>
-                    </form>
+                <div class="tekst">
+                    <h2 class="title">Kontakt</h2>
+                    <p>Osoby zainteresowane naszymi usłagami lub poszukujące odpowiedzi na konkretne pytania zapraszamy do kontaktu telefonicznego lub mailowego.</p>
+                    <img src="images/contact.png" alt="">
                 </div>
+                    <div class="container">
+
+                        <div class="webform-container">
+                            <div class="contact-info">
+                                <p> <span class="bold">Telefon</span>: 502 403 687</p>
+                                <p><span class="bold">Email</span>: mida@gmail.com</p>
+                            </div>
+                            <form method="POST" action="https://formspree.io/f/xzbkvkvo" class="form" id="my-form">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Imię</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Imię i Nazwisko" tabindex="1" required >
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Twój e-mail</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" tabindex="2" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Temat</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Temat" tabindex="3" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Wiadomość</label>
+                                    <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Wpisz wiadomość" tabindex="4"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn">Wyślij</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
                 <div id="status"></div>
-                <!-- <input type="button" value="Send Email" onclick="sendEmail()"> -->
             </section>
         </main>
         <footer>
@@ -116,8 +124,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54627.314135347486!2d19.151591347735422!3d50.128112270893446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716c1051f033cdd%3A0x3433cc104a32fcdf!2sGrzybowa%2023A%2C%2041-407%20Imielin!5e0!3m2!1spl!2spl!4v1602672365438!5m2!1spl!2spl" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
             <div class="info">
-                <p>Wojciech Michalek</p>
-                <p>NIP: 646-212-97-31</p>
+                <p>tel. 502 403 687</p>
             </div>
             <div class="copy">
                 <p>Copyright &copy; 2020 - 
