@@ -262,7 +262,31 @@
   margin: 0;
 }
 
-.wrapper main .kontakt .webform-container {
+.wrapper main .kontakt .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid red;
+}
+
+.wrapper main .kontakt .container .contact {
+  display: block;
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper main .kontakt .container .webform-container {
   margin-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,35 +302,36 @@
           flex-direction: column;
 }
 
-.wrapper main .kontakt .webform-container .contact-info {
+.wrapper main .kontakt .container .webform-container .contact-info {
   padding: 0;
   margin: 8px;
 }
 
-.wrapper main .kontakt .webform-container .contact-info p {
+.wrapper main .kontakt .container .webform-container .contact-info p {
   font-size: 1.1rem;
   padding: 0;
   margin: 0;
 }
 
-.wrapper main .kontakt .webform-container .contact-info p .bold {
+.wrapper main .kontakt .container .webform-container .contact-info p .bold {
   font-weight: bold;
 }
 
-.wrapper main .kontakt .webform-container .form {
+.wrapper main .kontakt .container .webform-container .form {
   background-color: #fff;
   width: 90%;
   padding: 20px;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
-.wrapper main .kontakt .webform-container .form .form-group {
+.wrapper main .kontakt .container .webform-container .form .form-group {
   margin-bottom: 1.5rem;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-.wrapper main .kontakt .webform-container .form .form-group .form-label {
+.wrapper main .kontakt .container .webform-container .form .form-group .form-label {
   font-size: .75rem;
   display: block;
   opacity: 0;
@@ -316,7 +341,7 @@
           transform: translateX(-50px);
 }
 
-.wrapper main .kontakt .webform-container .form .form-group .form-control {
+.wrapper main .kontakt .container .webform-container .form .form-group .form-control {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0;
@@ -328,42 +353,42 @@
   transition: all .6s;
 }
 
-.wrapper main .kontakt .webform-container .form .form-group .form-control:focus {
+.wrapper main .kontakt .container .webform-container .form .form-group .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-color: #254ca1;
   outline: none;
 }
 
-.wrapper main .kontakt .webform-container .form .form-group .form-control:invalid:focus {
+.wrapper main .kontakt .container .webform-container .form .form-group .form-control:invalid:focus {
   border-color: red;
 }
 
-.wrapper main .kontakt .webform-container .form .form-group .form-control::-webkit-input-placeholder {
+.wrapper main .kontakt .container .webform-container .form .form-group .form-control::-webkit-input-placeholder {
   color: #aaa;
   padding-left: 7px;
 }
 
-.wrapper main .kontakt .webform-container .form .form-group .form-control:-ms-input-placeholder {
+.wrapper main .kontakt .container .webform-container .form .form-group .form-control:-ms-input-placeholder {
   color: #aaa;
   padding-left: 7px;
 }
 
-.wrapper main .kontakt .webform-container .form .form-group .form-control::-ms-input-placeholder {
+.wrapper main .kontakt .container .webform-container .form .form-group .form-control::-ms-input-placeholder {
   color: #aaa;
   padding-left: 7px;
 }
 
-.wrapper main .kontakt .webform-container .form .form-group .form-control::placeholder {
+.wrapper main .kontakt .container .webform-container .form .form-group .form-control::placeholder {
   color: #aaa;
   padding-left: 7px;
 }
 
-.wrapper main .kontakt .webform-container .form .form-group textarea {
+.wrapper main .kontakt .container .webform-container .form .form-group textarea {
   resize: none;
 }
 
-.wrapper main .kontakt .webform-container .form .btn {
+.wrapper main .kontakt .container .webform-container .form .btn {
   background: 0 0 #fff;
   border: 1px solid #aaa;
   border-radius: 3px;
@@ -374,7 +399,7 @@
   padding: 10px;
 }
 
-.wrapper main .kontakt .webform-container .form .btn:hover {
+.wrapper main .kontakt .container .webform-container .form .btn:hover {
   border-color: #19819b;
   color: #19819b;
 }
@@ -520,6 +545,16 @@
   .wrapper main .kontakt .container {
     border: 1px solid red;
     width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .wrapper main .kontakt .container .webform-container {
     background-color: #719fd3;
