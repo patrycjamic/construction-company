@@ -173,11 +173,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5%;
 }
 
 .wrapper main .chapter p {
   font-size: 1.2rem;
+}
+
+.wrapper main .chapter .tekst {
+  padding: 5%;
 }
 
 .wrapper main .chapter h2 {
@@ -259,6 +262,7 @@
 }
 
 .wrapper main .kontakt {
+  border-bottom: 10px solid rgba(255, 255, 106, 0.952);
   margin: 0;
 }
 
@@ -271,25 +275,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid red;
 }
 
 .wrapper main .kontakt .container .contact {
   color: #fff;
   display: block;
-  border: 1px solid red;
-  margin: 0;
+  margin: 5% 0;
   padding: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .wrapper main .kontakt .container .webform-container {
-  margin: 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,16 +297,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.wrapper main .kontakt .container .webform-container .contact-info p {
-  font-size: 1.1rem;
-  padding: 0;
-  margin: 0;
-}
-
-.wrapper main .kontakt .container .webform-container .contact-info p .bold {
-  font-weight: bold;
 }
 
 .wrapper main .kontakt .container .webform-container .form {
@@ -408,6 +393,8 @@
 .wrapper footer .location {
   width: 100%;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper footer .location iframe {
@@ -415,6 +402,7 @@
 }
 
 .wrapper footer .info {
+  border-top: 10px solid rgba(255, 255, 106, 0.952);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,11 +513,11 @@
         -ms-flex-align: center;
             align-items: center;
     border-top: 10px double #719fd3;
-    padding: 9vh 0;
+    padding: 5vh 0;
     margin: 0 auto;
   }
   .wrapper main .chapter:nth-child(n+3) img {
-    top: 12vh;
+    top: 8vh;
     width: 5vw;
     left: 35vw;
   }
@@ -538,18 +526,25 @@
     margin-top: 1vw;
   }
   .wrapper main .chapter:nth-child(n+3) .tekst {
+    padding: 0;
     border: 1px solid black;
     width: 80vw;
     margin: 0 auto;
     text-align: center;
   }
+  .wrapper main .kontakt {
+    padding-bottom: 0 !important;
+  }
   .wrapper main .kontakt .container {
-    border: 1px solid red;
+    padding: 5vh 0;
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -561,9 +556,6 @@
     font-size: 1rem;
   }
   .wrapper main .kontakt .container .webform-container {
-    margin: 2% 0;
-    background-color: #719fd3;
-    border: 1px solid #ccc;
     width: 40%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -571,7 +563,6 @@
             flex-direction: column;
   }
   .wrapper main .kontakt .container .webform-container .form {
-    background-color: #fff;
     padding: 20px;
   }
   .wrapper main .kontakt .container .webform-container .form .form-group {
@@ -610,6 +601,9 @@
     background-size: cover;
     background-position: 20% 65%;
   }
+  .wrapper main .chapter:nth-child(n+3) {
+    padding: 9vh 0;
+  }
   .wrapper main .chapter h2 {
     font-size: 2vw;
   }
@@ -628,6 +622,9 @@
   }
   .wrapper main .chapter .anchor {
     bottom: 15vh;
+  }
+  .wrapper main .kontakt .container {
+    padding: 8vh 0;
   }
   .wrapper main .kontakt .container .webform-container .form .form-group .form-control {
     font-size: 1.2vw;
