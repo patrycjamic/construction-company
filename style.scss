@@ -102,6 +102,7 @@ $base-color: #719fd3;
             @include flexCustomize(space-evenly, center);
             p{font-size: 1.2rem;}
             flex-direction: column;
+            padding: 5%;
             h2{font-size: 1.6rem;
                 margin-bottom: 10px;
             }
@@ -113,7 +114,6 @@ $base-color: #719fd3;
                 opacity: 1;
                 transform: translateY(0px);
             }
-            padding: 2%;
             h2{padding: 2%; width: 100%; text-align: center};
             .anchor {
                 display: block;
@@ -159,10 +159,13 @@ $base-color: #719fd3;
         .kontakt{
             margin: 0;
             .container{
+                background-color: #282B28;
+
                 display: flex;
                 flex-direction: column;
                 border: 1px solid red;
                 .contact{
+                    color: #fff;
                     display: block;
                     border:1px solid red;
                     margin: 0;
@@ -171,15 +174,15 @@ $base-color: #719fd3;
                     justify-content: center;
                 }
                 .webform-container{
-                    margin-top: 5%;
+                    margin: 5% 0;
                     display: flex;
                     align-items: center;
                     background-color: $base-color;
                     width: 100%;
                     flex-direction: column;
                     .contact-info{
-                        padding: 0;
-                        margin: 8px;
+                        // padding: 0;
+                        // margin: 8px;
                         p{font-size: 1.1rem;
                             .bold{font-weight: bold;}
                         padding: 0; margin: 0;}
@@ -187,7 +190,7 @@ $base-color: #719fd3;
                     .form{
                         background-color: #fff;
                         width: 90%;
-                        padding: 20px;
+                        // padding: 20px;
                         margin-bottom: 50px;
                         margin-top: 50px;
                         .form-group{
@@ -240,6 +243,10 @@ $base-color: #719fd3;
                             }
                         }
                     }
+                }
+                .contact{
+                    text-align: center;
+                    padding: 15px;
                 }
             }
             
@@ -360,9 +367,9 @@ $base-color: #719fd3;
             .chapter:nth-child(n+3) {
                 @include flexCustomize(center,center );
                 border-top: 10px double $base-color;
-                padding: 10vh 5vh;
+                padding: 9vh 0;
                 margin: 0 auto;
-                img{top: 12vh; width: 5vw; left: 30vw;}
+                img{top: 12vh; width: 5vw; left: 35vw;}
                 p{ padding:1vw; margin-top: 1vw;}
                 .tekst{
                     border: 1px solid black;
@@ -373,12 +380,18 @@ $base-color: #719fd3;
             }
             .kontakt{
                 .container{
+                    // background-color: #282B28;
                     border: 1px solid red;
                     width: 100%;
                     flex-direction: row;
                     justify-content: space-evenly;
                     align-items: center;
+                    .contact{
+                        // color: #fff;
+                        p{font-size: 1rem;}
+                    }
                     .webform-container{
+                            margin: 2% 0;
                             background-color: $base-color;
                             border: 1px solid #ccc;
                             // padding-bottom: 15px;
@@ -390,7 +403,7 @@ $base-color: #719fd3;
                             .form-group{
                                 margin-bottom:1rem;
                                 .form-control{
-                                    font-size: 1.2vw;
+                                    font-size: 1.5vw;
                                 }
                             }
                         }
@@ -457,6 +470,20 @@ $base-color: #719fd3;
                     h3{font-size: 1.2vw;}
                 }
                 .anchor {bottom: 15vh;}
+            }
+            .kontakt{
+                .container{
+                    .webform-container{
+                        .form{
+                            .form-group{
+                                .form-control{font-size: 1.2vw;}
+                            }
+                        }
+                    }
+                    .contact{
+                        p{font-size: 1.4rem;}
+                    }
+                }
             }
         }
         footer{
