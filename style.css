@@ -246,6 +246,16 @@
   opacity: .2;
 }
 
+.wrapper main .ofirmie ul, .wrapper main .uslugi ul, .wrapper main .kontakt ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .wrapper main .ofirmie ul li, .wrapper main .uslugi ul li, .wrapper main .kontakt ul li {
   padding-top: 2vh;
   list-style: none;
@@ -268,6 +278,7 @@
 
 .wrapper main .kontakt .container {
   background-color: #282B28;
+  border-top: 10px solid rgba(255, 255, 106, 0.952);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,7 +413,6 @@
 }
 
 .wrapper footer .info {
-  border-top: 10px solid rgba(255, 255, 106, 0.952);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,10 +537,45 @@
   }
   .wrapper main .chapter:nth-child(n+3) .tekst {
     padding: 0;
-    border: 1px solid black;
     width: 80vw;
     margin: 0 auto;
     text-align: center;
+  }
+  .wrapper main .uslugi ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+    height: 45vh;
+  }
+  .wrapper main .uslugi ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 2px dotted #ccc;
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    height: 20%;
+    text-align: center;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .wrapper main .uslugi ul li:hover {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #282B28;
+    color: #fff;
   }
   .wrapper main .kontakt {
     padding-bottom: 0 !important;
@@ -631,6 +676,13 @@
   }
   .wrapper main .kontakt .container .contact p {
     font-size: 1.4rem;
+  }
+  .wrapper main .uslugi ul {
+    height: 65vh;
+  }
+  .wrapper main .uslugi ul li {
+    width: 30%;
+    height: 25%;
   }
   .wrapper footer .location iframe {
     height: 60vh;

@@ -142,6 +142,8 @@ $borders: rgba(255, 255, 106, 0.952);
                 opacity: .2;
             }
             ul{
+                display: flex;
+                flex-direction: column;
                 li{
                     padding-top: 2vh;
                     list-style: none;
@@ -149,6 +151,8 @@ $borders: rgba(255, 255, 106, 0.952);
                         content: '';
                         margin-right: 25px;
                         display: inline-block;
+                        // display: flex;
+                        // flex-direction: column;
                         height: 20px;
                         width: 20px;
                         background-image: url(images/gear.png);
@@ -162,6 +166,7 @@ $borders: rgba(255, 255, 106, 0.952);
             margin: 0;
             .container{
                 background-color: #282B28;
+                border-top: 10px solid $borders;
                 display: flex;
                 flex-direction: column;
                 .contact{
@@ -290,7 +295,7 @@ $borders: rgba(255, 255, 106, 0.952);
             padding: 0;
         }
         .info{
-            border-top: 10px solid $borders;
+            // border-top: 10px solid $borders;
             @include flexCustomize(center,center);
             height: 10vh;
             font-size: 2rem;
@@ -374,10 +379,42 @@ $borders: rgba(255, 255, 106, 0.952);
                 p{ padding:1vw; margin-top: 1vw;}
                 .tekst{
                     padding: 0;
-                    border: 1px solid black;
+                    // border: 1px solid black;
                     width: 80vw;
                     margin: 0 auto;
                     text-align: center;
+                }
+
+
+            }
+            .uslugi{
+                ul{
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    padding: 20px;
+                    height: 45vh;
+
+                    li{
+                        display: flex;
+                        align-items: center;
+                        border: 2px dotted #ccc;
+                        width: 40%;
+                        padding: 10px;
+                        margin: 10px;
+                        font-size: 1rem;
+                        height: 20%;
+                        text-align: center;
+                        // margin-top: 15px;
+                        transition: .4s;
+
+                        &:hover{
+                            margin-top: 20px;
+                            cursor: pointer;
+                            background-color: #282B28;
+                            color: #fff;
+                        }
+                    }
                 }
             }
             .kontakt{
@@ -483,6 +520,16 @@ $borders: rgba(255, 255, 106, 0.952);
                     }
                     .contact{
                         p{font-size: 1.4rem;}
+                    }
+                }
+            }
+            .uslugi{
+                ul{
+                    height: 65vh;
+
+                    li{
+                        width: 30%;
+                        height: 25%;
                     }
                 }
             }

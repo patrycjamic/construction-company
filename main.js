@@ -86,18 +86,8 @@ function scrollAppear(){
 
 }
 
-
-
 window.addEventListener("scroll", myScrollFunc);
-
 window.addEventListener('scroll', scrollAppear);
-
-
-
-
-
-
-
 
 window.addEventListener("DOMContentLoaded", function() {
 
