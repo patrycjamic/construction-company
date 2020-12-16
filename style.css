@@ -277,6 +277,7 @@
 }
 
 .wrapper main .kontakt .container {
+  margin-top: 22px;
   background-color: #282B28;
   border-top: 10px solid rgba(255, 255, 106, 0.952);
   display: -webkit-box;
@@ -410,6 +411,10 @@
 
 .wrapper footer .location iframe {
   width: 100%;
+}
+
+.wrapper footer .location iframe {
+  height: 80vh;
 }
 
 .wrapper footer .info {
@@ -625,6 +630,9 @@
   .wrapper main .kontakt .container .webform-container .form .form-group .form-control {
     font-size: 1.5vw;
   }
+  .wrapper footer iframe {
+    height: 60vh;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
@@ -633,7 +641,7 @@
   }
   .wrapper header .logo {
     font-size: 1.4vw;
-    width: 20vw;
+    width: 23vw;
   }
   .wrapper header .menu ul li {
     font-size: 1.2vw;
@@ -694,7 +702,7 @@
     height: 25%;
   }
   .wrapper footer .location iframe {
-    height: 60vh;
+    height: 80vh;
     width: 100%;
   }
   .wrapper footer .showBtn .toupBtn {

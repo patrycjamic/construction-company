@@ -165,6 +165,7 @@ $borders: rgba(255, 255, 106, 0.952);
             border-bottom: 10px solid $borders;
             margin: 0;
             .container{
+                margin-top: 22px;
                 background-color: #282B28;
                 border-top: 10px solid $borders;
                 display: flex;
@@ -293,6 +294,7 @@ $borders: rgba(255, 255, 106, 0.952);
             iframe{width: 100%;}
             margin: 0;
             padding: 0;
+            iframe{height: 80vh;}
         }
         .info{
             // border-top: 10px solid $borders;
@@ -450,7 +452,11 @@ $borders: rgba(255, 255, 106, 0.952);
                     }
                 }
             }
-        }   
+        } 
+        footer{
+            iframe{height: 60vh;}
+        }  
+
     }
 }
 @media only screen and(min-width: 1025px){
@@ -459,7 +465,7 @@ $borders: rgba(255, 255, 106, 0.952);
             p{font-size: 1vw;}
         }
         header{
-            .logo{font-size: 1.4vw; width: 20vw;}      
+            .logo{font-size: 1.4vw; width: 23vw;}      
             .menu{
                 ul{li{font-size: 1.2vw;}}
             }
@@ -540,7 +546,7 @@ $borders: rgba(255, 255, 106, 0.952);
         footer{
             .location{
                 iframe{
-                    height: 60vh;
+                    height: 80vh;
                     width: 100%;
                 }
             }
