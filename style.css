@@ -463,15 +463,24 @@
 }
 
 @media screen and (min-width: 700px) {
+  .wrapper header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .wrapper header .burger-menu {
     display: none;
   }
   .wrapper header .menu {
     display: block;
     height: 100%;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    width: 70vw;
   }
   .wrapper header .menu .fa-times {
     display: none;
@@ -561,7 +570,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border: 2px dotted #ccc;
+    border: 2px solid #ccc;
     width: 40%;
     padding: 10px;
     margin: 10px;
@@ -573,9 +582,9 @@
   }
   .wrapper main .uslugi ul li:hover {
     margin-top: 20px;
-    cursor: pointer;
-    background-color: #282B28;
+    background-color: #494d49;
     color: #fff;
+    border: 2px solid #fff;
   }
   .wrapper main .kontakt {
     padding-bottom: 0 !important;
@@ -624,7 +633,7 @@
   }
   .wrapper header .logo {
     font-size: 1.4vw;
-    width: 20vw;
+    width: 25vw;
   }
   .wrapper header .menu ul li {
     font-size: 1.2vw;

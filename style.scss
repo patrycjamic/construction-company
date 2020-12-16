@@ -330,11 +330,13 @@ $borders: rgba(255, 255, 106, 0.952);
 @media screen and(min-width: 700px){
     .wrapper{
         header{
+            @include flexCustomize(space-between, center);
             .burger-menu{display: none;}
             .menu{
                 display:block;
                 height: 100%;
-                flex: 1;
+                // flex: 1;
+                width: 70vw;
                 .fa-times{display: none;}
                 ul{
                     height: 100%;
@@ -398,7 +400,7 @@ $borders: rgba(255, 255, 106, 0.952);
                     li{
                         display: flex;
                         align-items: center;
-                        border: 2px dotted #ccc;
+                        border: 2px solid #ccc;
                         width: 40%;
                         padding: 10px;
                         margin: 10px;
@@ -410,9 +412,10 @@ $borders: rgba(255, 255, 106, 0.952);
 
                         &:hover{
                             margin-top: 20px;
-                            cursor: pointer;
-                            background-color: #282B28;
+                            background-color: #494d49;
                             color: #fff;
+                            border: 2px solid #fff;
+
                         }
                     }
                 }
@@ -456,7 +459,7 @@ $borders: rgba(255, 255, 106, 0.952);
             p{font-size: 1vw;}
         }
         header{
-            .logo{font-size: 1.4vw; width: 20vw;}
+            .logo{font-size: 1.4vw; width: 25vw;}      
             .menu{
                 ul{li{font-size: 1.2vw;}}
             }
