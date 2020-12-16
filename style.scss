@@ -246,6 +246,38 @@ $borders: rgba(255, 255, 106, 0.952);
                                 color: rgb(25, 129, 155);
                             }
                         }
+
+                        #status {
+                            width: 90%;
+                            max-width: 400px;
+                            text-align: center;
+                            padding: 10px;
+                            margin: 5px auto;
+                            border-radius: 8px;
+                        }
+                        #status.success {
+                            background-color: rgb(211, 250, 153);
+                            animation: status 2s ease forwards;
+                        }
+                        #status.error {
+                            background-color: rgb(250, 129, 92);
+                            color: #fff;
+                            animation: status 2s ease forwards;
+                        }
+                        @keyframes status {
+                            0% {
+                              opacity: 1;
+                              pointer-events: all;
+                            }
+                            90% {
+                              opacity: 1;
+                              pointer-events: all;
+                            }
+                            100% {
+                              opacity: 0;
+                              pointer-events: none;
+                            }
+                        }
                     }
                 }
                 .contact{
@@ -253,38 +285,6 @@ $borders: rgba(255, 255, 106, 0.952);
                     padding: 15px;
                 }
             }
-            
-            // #status {
-            //     width: 90%;
-            //     max-width: 400px;
-            //     text-align: center;
-            //     padding: 10px;
-            //     margin: 5px auto;
-            //     border-radius: 8px;
-            // }
-            // #status.success {
-            //     background-color: rgb(211, 250, 153);
-            //     animation: status 2s ease forwards;
-            // }
-            // #status.error {
-            //     background-color: rgb(250, 129, 92);
-            //     color: #fff;
-            //     animation: status 2s ease forwards;
-            // }
-            // @keyframes status {
-            //     0% {
-            //       opacity: 1;
-            //       pointer-events: all;
-            //     }
-            //     90% {
-            //       opacity: 1;
-            //       pointer-events: all;
-            //     }
-            //     100% {
-            //       opacity: 0;
-            //       pointer-events: none;
-            //     }
-            // }
         }
     }
     footer{

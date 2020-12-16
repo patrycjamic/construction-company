@@ -397,6 +397,58 @@
   color: #19819b;
 }
 
+.wrapper main .kontakt .container .webform-container .form #status {
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px auto;
+  border-radius: 8px;
+}
+
+.wrapper main .kontakt .container .webform-container .form #status.success {
+  background-color: #d3fa99;
+  -webkit-animation: status 2s ease forwards;
+          animation: status 2s ease forwards;
+}
+
+.wrapper main .kontakt .container .webform-container .form #status.error {
+  background-color: #fa815c;
+  color: #fff;
+  -webkit-animation: status 2s ease forwards;
+          animation: status 2s ease forwards;
+}
+
+@-webkit-keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
 .wrapper main .kontakt .container .contact {
   text-align: center;
   padding: 15px;

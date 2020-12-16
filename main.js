@@ -105,7 +105,6 @@ window.addEventListener("DOMContentLoaded", function() {
   }
 
   function error() {
-    status.classList.add('error');
     status.innerHTML = "Oops! Wystąpił problem";
   }
 
